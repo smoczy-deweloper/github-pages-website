@@ -1,8 +1,6 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem "jekyll"
+source "https://rubygems.org"
+
 gem "minima"
 
-group :jekyll_plugins do
-  gem "jekyll-sitemap"
-end
