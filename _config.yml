@@ -8,6 +8,11 @@ author:
 description: >
   Some cool description.
 
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
+
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
