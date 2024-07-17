@@ -1,4 +1,4 @@
-- name: About
-  link: /about
+- name: Home
+  link: "/"
 - name: CV
   link: /assets/cv/cv.pdf
