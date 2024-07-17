@@ -12,19 +12,19 @@
             </svg><span>Subscribe</span>
           </a>
         </p>
-      {%- if site.author %}
+      {%- if site.data.general.author %}
         <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
+          {% if site.data.general.author.name -%}
+            <li class="p-name">{{ site.data.general.author.name | escape }}</li>
           {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          {% if site.data.general.author.email -%}
+            <li><a class="u-email" href="mailto:{{ site.data.general.author.email }}">{{ site.data.general.author.email }}</a></li>
           {%- endif %}
         </ul>
       {%- endif %}
       </div>
       <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
+        <p>{{ site.data.general.description | escape }}</p>
       </div>
     </div>
 
