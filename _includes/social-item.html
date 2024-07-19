@@ -1,7 +1,7 @@
 <li>{% assign entry = include.item %}
   <a {% unless entry.name == 'rss' %}rel="me" {% endunless %}href="{{ entry.link }}" target="_blank" title="{{ entry.name }}">
     <svg class="svg-icon grey">
-      <use xlink:href="{{ '/assets/minima-social-icons.svg#' | append: entry.name | relative_url }}"></use>
+      <use xlink:href="{{ '/minima/assets/minima-social-icons.svg#' | append: entry.name | relative_url }}"></use>
     </svg>
   </a>
 </li>
