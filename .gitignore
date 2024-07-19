@@ -20,3 +20,7 @@ Gemfile.lock
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Development
+_config_dev.yml
+*.bat
