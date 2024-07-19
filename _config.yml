@@ -4,7 +4,8 @@ titles_from_headings:
   strip_title: true
   collections: true
 
-remote_theme: jekyll/minima
+# remote_theme: jekyll/minima
+theme: minima
 
 plugins:
   - jekyll-feed
