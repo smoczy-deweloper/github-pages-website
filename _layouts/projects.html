@@ -22,10 +22,19 @@ layout: base
               {{ project.name }}
             </a>
           {%- endif -%}
+          
+          <table class="project-data-table">
+            <tr>
+              <td class="project-tools">Tools: {{ project.tools }}</td>
 
-          <p class="project-tools">
-            Tools: {{ project.tools }}
-          </p>
+              <td class="project-date">{{ project.date }}</td>
+            </tr>
+
+          </table>
+
+          {%- if project.media -%}
+          <img src="{{ project.media }}" class="project-media">
+          {%- endif -%}
 
           <p class="project-description">
             {{ project.description }}
