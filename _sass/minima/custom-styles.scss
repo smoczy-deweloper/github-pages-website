@@ -15,30 +15,42 @@
 }
 
 .project-data-table {
-    border-collapse: collapse;
-    border: none;
+    // border-collapse: collapse;
+    // border: none;
     border-spacing: 0;
     margin-left: 0;
+    margin-right: 0;
     width: 100%;
 
-    td, th {
-        border-collapse: collapse;
-        border: none;
-    }
+    // td, th {
+        // border-collapse: collapse;
+        // border: none;
+    // }
 }
 
 .project-tools {
     font-weight: bold;
     margin-left: 0;
+    margin-right: 0;
     padding-left: 0;
+    padding-right: 0;
 }
 
 .project-date {
     font-style: italic;
     text-align: right;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .project-media {
     width: 400px;
     height: 300px;
+}
+
+.projects-content {
+
+    width: 100%;
+    border-color: black;
+    border-style: solid;
 }
