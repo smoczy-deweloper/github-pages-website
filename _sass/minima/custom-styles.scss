@@ -14,6 +14,31 @@
     text-decoration: none !important;
 }
 
+.project-data-table {
+    border-collapse: collapse;
+    border: none;
+    border-spacing: 0;
+    margin-left: 0;
+    width: 100%;
+
+    td, th {
+        border-collapse: collapse;
+        border: none;
+    }
+}
+
 .project-tools {
     font-weight: bold;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.project-date {
+    font-style: italic;
+    text-align: right;
+}
+
+.project-media {
+    width: 400px;
+    height: 300px;
 }
