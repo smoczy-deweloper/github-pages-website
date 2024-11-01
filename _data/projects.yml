@@ -4,7 +4,7 @@
   media: /assets/projects/handwriter.gif
   tools: "Python, tensorflow"
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 - name: Snake
   date: "Dec, 2022"
@@ -18,7 +18,7 @@
   date: "Jul, 2021"
   link: https://github.com/gekas145/NEAT
   media: /assets/projects/neat_dpb.gif
-  tools: "Python"
+  tools: "Python, pymunk, numpy"
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -28,4 +28,4 @@
   tools: "Python, numpy"
   media: /assets/projects/mnist_draw_app.gif
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Lorem ipsum dolor sit amet, consectetur adipisce et dolore magna aliqua. 
