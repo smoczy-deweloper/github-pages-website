@@ -11,7 +11,7 @@
   date: "Oct, 2023"
   tools: "Python, pytorch"
   description: >
-    Deep RNN trained to recognize simple voice commands using Connectionist Temporal Classification(CTC) loss. Network and data processing were implemented in pytorch.
+    Deep RNN trained to recognize simple voice commands using Connectionist Temporal Classification(CTC) loss. Trained model is then tested with several decoding algorithms, implemented from scratch. Network and data processing were implemented in pytorch.
 
 - name: wave-function-collapse
   link: https://github.com/gekas145/wave-function-collapse
