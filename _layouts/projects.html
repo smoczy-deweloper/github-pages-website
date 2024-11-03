@@ -34,7 +34,11 @@ layout: base
           </table>
 
           {%- if project.media -%}
-          <img src="{{ project.media }}" class="project-media">
+            {%- if project.media.size -%}
+              <img src="{{ project.media.path }}" class="project-media" width="{{ project.media.size[0] }}px" height="{{ project.media.size[1] }}px">
+            {%- else -%}
+              <img src="{{ project.media.path }}" class="project-media">
+            {%- endif -%}
           {%- endif -%}
 
           <p class="project-description">
