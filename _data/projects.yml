@@ -3,7 +3,7 @@
   link: https://github.com/gekas145/handwriter
   media: 
     path: /assets/projects/handwriter.gif
-    size: [400, 200]
+    size: [100, 200]
   tools: "Python, tensorflow, google cloud"
   description: >
     Deep RNN that uses LSTM blocks and simple attention mechanism to generate human-like handwriting based on provided text transcriptions. Whole network code implemented in tensorflow, the training itself was carried out on GCP VM.  
@@ -37,7 +37,7 @@
   date: "Dec, 2022"
   media: 
     path: /assets/projects/cnn_snake.gif
-    size: [400, 300]
+    size: [72, 54]
   tools: "Python, tensorflow"
   description: >
     Convolutional neural network is trained to play Snake game. The only information available to the network are images of game board, just as it is with humans. The network is trained by Deep Double Q-Network(DDQN) algorithm.
@@ -47,7 +47,7 @@
   link: https://github.com/gekas145/NEAT
   media:
     path: /assets/projects/neat_dpb.gif
-    size: [400, 300]
+    size: [56, 42]
   tools: "Python, pymunk, numpy"
   description: >
     Neural Evolutions of Augmenting Topologies(NEAT) algorithm implementation from scratch which is tried out with xor, single and double poles balancing tasks.
@@ -58,6 +58,6 @@
   tools: "Python, numpy"
   media: 
     path: /assets/projects/mnist_draw_app.gif
-    size: [400, 300]
+    size: [72, 54]
   description: >
     Multi Layer Perseptron(MLP) and some optimizers(SGD, momentum) implemented in numpy from scratch. Trained to recognize handwritten digits from original MNIST dataset. Comes with simple drawing application to test on seld-drawn samples.
