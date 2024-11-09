@@ -35,7 +35,7 @@ layout: base
 
           {%- if project.media -%}
             {%- if project.media.size -%}
-              <img src="{{ project.media.path }}" class="project-media" width="{{ project.media.size[0] }}px" height="{{ project.media.size[1] }}px">
+              <img src="{{ project.media.path }}" class="project-media" width="{{ project.media.size[0] }}%" height="{{ project.media.size[1] }}%">
             {%- else -%}
               <img src="{{ project.media.path }}" class="project-media">
             {%- endif -%}
