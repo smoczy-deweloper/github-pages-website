@@ -1,7 +1,14 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
+body {
+    font-size: min(200%, 20px);
+}
 
+.site-title {
+    pointer-events: none;
+    font-weight: bold;
+}
 
 .project-name {
     display: inline;

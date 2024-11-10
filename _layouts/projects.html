@@ -7,6 +7,8 @@ layout: base
     <h1 class="page-heading">{{ page.title }}</h1>
   </header>
 
+  <p>Below is a list of my chosen projects which I do in my spare time. Most of them written in Python with usage of ML/DL libraries.</p>
+
   <div class="projects-content">
     <ul class="projects-list post-list">
     {%- for project in site.data.projects -%}
@@ -26,7 +28,7 @@ layout: base
           <table class="project-data-table">
             <tbody>
             <tr>
-              <td class="project-tools">Tools: {{ project.tools }}</td>
+              <td class="project-tools">{{ project.tools }}</td>
               <td class="project-date">{{ project.date }}</td>
             </tr>
           </tbody>

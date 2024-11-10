@@ -28,6 +28,9 @@
 - name: SOM
   link: https://github.com/gekas145/SOM
   date: "Apr, 2023"
+  media:
+    path: /assets/projects/som.png
+    size: [72, 36]
   tools: "Python, numpy, scikit-learn"
   description: >
     Self-organizing map, aka SOM, aka Kohonen network implementation in Python. This algorithm is useful for visualising high-dimensional data.
@@ -55,7 +58,7 @@
 - name: MNIST
   date: "Aug, 2020"
   link: https://github.com/gekas145/Neural-Network-MNIST
-  tools: "Python, numpy"
+  tools: "Python, Java, numpy"
   media: 
     path: /assets/projects/mnist_draw_app.gif
     size: [72, 54]

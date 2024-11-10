@@ -1,6 +1,4 @@
 - name: Home
   link: "/"
-- name: CV
-  link: /assets/cv/cv.pdf
 - name: Projects
   link: /projects.html
