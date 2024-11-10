@@ -55,7 +55,7 @@
 - name: MNIST
   date: "Aug, 2020"
   link: https://github.com/gekas145/Neural-Network-MNIST
-  tools: "Python, numpy"
+  tools: "Python, Java, numpy"
   media: 
     path: /assets/projects/mnist_draw_app.gif
     size: [72, 54]
