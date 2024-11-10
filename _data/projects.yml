@@ -28,6 +28,9 @@
 - name: SOM
   link: https://github.com/gekas145/SOM
   date: "Apr, 2023"
+  media:
+    path: /assets/projects/som.png
+    size: [72, 36]
   tools: "Python, numpy, scikit-learn"
   description: >
     Self-organizing map, aka SOM, aka Kohonen network implementation in Python. This algorithm is useful for visualising high-dimensional data.
