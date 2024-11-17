@@ -16,11 +16,14 @@
     size: [600, 300]
   tools: "Python, pytorch"
   description: >
-    Deep RNN trained to recognize simple voice commands using Connectionist Temporal Classification(CTC) loss. Trained model is then tested with several decoding algorithms, implemented from scratch. Network and data processing were implemented in pytorch.
+    Deep RNN trained to recognize short voice commands using Connectionist Temporal Classification(CTC) loss. Trained model is then tested with several decoding algorithms, implemented from scratch. Network and data processing were implemented in pytorch.
 
 - name: wave-function-collapse
   link: https://github.com/gekas145/wave-function-collapse
   date: "Aug, 2023"
+  media:
+    path: /assets/projects/wfc.png
+    size: [50, 25]
   tools: "Python"
   description: >
     An algorithm for image generation with no machine learning models involved.
@@ -33,7 +36,7 @@
     size: [72, 36]
   tools: "Python, numpy, scikit-learn"
   description: >
-    Self-organizing map, aka SOM, aka Kohonen network implementation in Python. This algorithm is useful for visualising high-dimensional data.
+    Self-organizing map, aka SOM, aka Kohonen network implementation in Python. This algorithm is useful for visualising high-dimensional data in 2D.
 
 - name: Snake
   link: https://github.com/gekas145/Snake
