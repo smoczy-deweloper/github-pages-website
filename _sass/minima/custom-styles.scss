@@ -6,8 +6,20 @@ body {
 }
 
 .site-title {
-    pointer-events: none;
     font-weight: bold;
+}
+
+.title-wrapper {
+    position: absolute;
+    margin-left: max(2.5%, 15px);
+}
+
+.site-header {
+    display: table;
+}
+
+.site-title:hover {
+    text-decoration: none;
 }
 
 .project-name {
