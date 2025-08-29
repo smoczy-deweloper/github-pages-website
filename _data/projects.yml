@@ -1,3 +1,13 @@
+- name: ppo
+  date: "Jul, 2025"
+  link: https://github.com/gekas145/ppo
+  media: 
+    path: /assets/projects/car_racing.gif
+    size: [72, 48]
+  tools: "Python, pytorch, google cloud"
+  description: >
+    Implementation of Proximal Policy Optimization algorithm. Used to train deep CNNs to solve enviroments with continuous and discrete action spaces.
+
 - name: handwriter
   date: "Oct, 2024"
   link: https://github.com/gekas145/handwriter
