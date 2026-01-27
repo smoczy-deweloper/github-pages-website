@@ -1,0 +1,11 @@
+services:
+  jekyll:
+    build: .                    # Use the Dockerfile in the current folder
+    ports:
+      - "4000:4000"             # Browser access
+      - "35729:35729"           # LiveReload port
+    volumes:
+      - .:/srv/jekyll           # Mount current folder as volume
+    command: jekyll serve --livereload --host 0.0.0.0 --force_polling
+    stdin_open: true            # Optional: allows Ctrl+C to stop container gracefully
+    tty: true
