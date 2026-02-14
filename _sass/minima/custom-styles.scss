@@ -15,7 +15,20 @@ body {
 }
 
 .site-header {
-    display: table;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-top: none;
+    border-bottom: none;
+    background-color: var(--minima-background-color);
+    transition: transform 0.3s ease;
+}
+
+.site-header.header-hidden {
+    transform: translateY(-100%);
 }
 
 .site-title:hover {

@@ -15,6 +15,39 @@
 
     {%- include footer.html -%}
 
+    <script>
+      (function() {
+        var header = document.querySelector('.site-header');
+        if (!header) return;
+        var lastScrollY = window.scrollY;
+        var ticking = false;
+
+        function updatePadding() {
+          document.body.style.paddingTop = header.offsetHeight + 'px';
+        }
+
+        function onScroll() {
+          var currentScrollY = window.scrollY;
+          if (currentScrollY > lastScrollY && currentScrollY > header.offsetHeight) {
+            header.classList.add('header-hidden');
+          } else {
+            header.classList.remove('header-hidden');
+          }
+          lastScrollY = Math.max(0, currentScrollY);
+          ticking = false;
+        }
+
+        updatePadding();
+        window.addEventListener('resize', updatePadding, { passive: true });
+        window.addEventListener('scroll', function() {
+          if (!ticking) {
+            requestAnimationFrame(onScroll);
+            ticking = true;
+          }
+        }, { passive: true });
+      })();
+    </script>
+
   </body>
 
 </html>
