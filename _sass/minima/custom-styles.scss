@@ -27,8 +27,7 @@ body {
 }
 
 .project-name-no-link {
-
-    color: black;
+    color: inherit;
     display: inline;
     text-decoration: none !important;
 }
@@ -69,4 +68,19 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0 6px;
+    color: var(--minima-brand-color-dark);
+    line-height: inherit;
+    vertical-align: middle;
+}
+
+.theme-toggle:hover {
+    color: var(--minima-text-color);
 }

@@ -20,7 +20,29 @@
          {%- for item in site.data.navigation -%}
            <a class="page-link" href="{{ item.link | relative_url }}">{{ item.name | escape }}</a>
          {%- endfor -%}
+         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">&#9790;</button>
       </div>
      </nav>
   </div>
 </header>
+
+<script>
+  (function() {
+    var btn = document.getElementById('theme-toggle');
+    function getEffective() {
+      var s = localStorage.getItem('theme');
+      if (s) return s;
+      return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    }
+    function updateBtn() {
+      btn.textContent = getEffective() === 'dark' ? '\u2600' : '\u263e';
+    }
+    btn.addEventListener('click', function() {
+      var next = getEffective() === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      document.documentElement.setAttribute('data-theme', next);
+      updateBtn();
+    });
+    updateBtn();
+  })();
+</script>

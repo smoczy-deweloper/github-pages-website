@@ -237,64 +237,64 @@ $table-border-color: $lm-table-border-color;
 
 @if $color-scheme-auto {
 
-  // Auto mode
+  // Auto mode (dark by default, light only when OS explicitly requests it)
 
   :root {
-    --minima-brand-color: #{$lm-brand-color};
-    --minima-brand-color-light: #{$lm-brand-color-light};
-    --minima-brand-color-dark: #{$lm-brand-color-dark};
+    --minima-brand-color: #{$dm-brand-color};
+    --minima-brand-color-light: #{$dm-brand-color-light};
+    --minima-brand-color-dark: #{$dm-brand-color-dark};
 
-    --minima-site-title-color: #{$lm-site-title-color};
+    --minima-site-title-color: #{$dm-site-title-color};
 
-    --minima-text-color: #{$lm-text-color};
-    --minima-background-color: #{$lm-background-color};
-    --minima-code-background-color: #{$lm-code-background-color};
+    --minima-text-color: #{$dm-text-color};
+    --minima-background-color: #{$dm-background-color};
+    --minima-code-background-color: #{$dm-code-background-color};
 
-    --minima-link-base-color: #{$lm-link-base-color};
-    --minima-link-visited-color: #{$lm-link-visited-color};
-    --minima-link-hover-color: #{$lm-link-hover-color};
+    --minima-link-base-color: #{$dm-link-base-color};
+    --minima-link-visited-color: #{$dm-link-visited-color};
+    --minima-link-hover-color: #{$dm-link-hover-color};
 
-    --minima-border-color-01: #{$lm-border-color-01};
-    --minima-border-color-02: #{$lm-border-color-02};
-    --minima-border-color-03: #{$lm-border-color-03};
+    --minima-border-color-01: #{$dm-border-color-01};
+    --minima-border-color-02: #{$dm-border-color-02};
+    --minima-border-color-03: #{$dm-border-color-03};
 
-    --minima-table-text-color: #{$lm-table-text-color};
-    --minima-table-zebra-color: #{$lm-table-zebra-color};
-    --minima-table-header-bg-color: #{$lm-table-header-bg-color};
-    --minima-table-header-border: #{$lm-table-header-border};
-    --minima-table-border-color: #{$lm-table-border-color};
+    --minima-table-text-color: #{$dm-table-text-color};
+    --minima-table-zebra-color: #{$dm-table-zebra-color};
+    --minima-table-header-bg-color: #{$dm-table-header-bg-color};
+    --minima-table-header-border: #{$dm-table-header-border};
+    --minima-table-border-color: #{$dm-table-border-color};
   }
 
-  @include lm-highlight;
+  @include dm-highlight;
 
-  @media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: light) {
     :root {
-      --minima-brand-color: #{$dm-brand-color};
-      --minima-brand-color-light: #{$dm-brand-color-light};
-      --minima-brand-color-dark: #{$dm-brand-color-dark};
+      --minima-brand-color: #{$lm-brand-color};
+      --minima-brand-color-light: #{$lm-brand-color-light};
+      --minima-brand-color-dark: #{$lm-brand-color-dark};
 
-      --minima-site-title-color: #{$dm-site-title-color};
+      --minima-site-title-color: #{$lm-site-title-color};
 
-      --minima-text-color: #{$dm-text-color};
-      --minima-background-color: #{$dm-background-color};
-      --minima-code-background-color: #{$dm-code-background-color};
+      --minima-text-color: #{$lm-text-color};
+      --minima-background-color: #{$lm-background-color};
+      --minima-code-background-color: #{$lm-code-background-color};
 
-      --minima-link-base-color: #{$dm-link-base-color};
-      --minima-link-visited-color: #{$dm-link-visited-color};
-      --minima-link-hover-color: #{$dm-link-hover-color};
+      --minima-link-base-color: #{$lm-link-base-color};
+      --minima-link-visited-color: #{$lm-link-visited-color};
+      --minima-link-hover-color: #{$lm-link-hover-color};
 
-      --minima-border-color-01: #{$dm-border-color-01};
-      --minima-border-color-02: #{$dm-border-color-02};
-      --minima-border-color-03: #{$dm-border-color-03};
+      --minima-border-color-01: #{$lm-border-color-01};
+      --minima-border-color-02: #{$lm-border-color-02};
+      --minima-border-color-03: #{$lm-border-color-03};
 
-      --minima-table-text-color: #{$dm-table-text-color};
-      --minima-table-zebra-color: #{$dm-table-zebra-color};
-      --minima-table-header-bg-color: #{$dm-table-header-bg-color};
-      --minima-table-header-border: #{$dm-table-header-border};
-      --minima-table-border-color: #{$dm-table-border-color};
+      --minima-table-text-color: #{$lm-table-text-color};
+      --minima-table-zebra-color: #{$lm-table-zebra-color};
+      --minima-table-header-bg-color: #{$lm-table-header-bg-color};
+      --minima-table-header-border: #{$lm-table-header-border};
+      --minima-table-border-color: #{$lm-table-border-color};
     }
 
-    @include dm-highlight;
+    @include lm-highlight;
   }
 
   $brand-color: var(--minima-brand-color);
@@ -321,6 +321,51 @@ $table-border-color: $lm-table-border-color;
   $table-header-border: var(--minima-table-header-border);
   $table-border-color: var(--minima-table-border-color);
 
+
+// Manual theme override via JS toggle
+html[data-theme="dark"] {
+  --minima-brand-color: #{$dm-brand-color};
+  --minima-brand-color-light: #{$dm-brand-color-light};
+  --minima-brand-color-dark: #{$dm-brand-color-dark};
+  --minima-site-title-color: #{$dm-site-title-color};
+  --minima-text-color: #{$dm-text-color};
+  --minima-background-color: #{$dm-background-color};
+  --minima-code-background-color: #{$dm-code-background-color};
+  --minima-link-base-color: #{$dm-link-base-color};
+  --minima-link-visited-color: #{$dm-link-visited-color};
+  --minima-link-hover-color: #{$dm-link-hover-color};
+  --minima-border-color-01: #{$dm-border-color-01};
+  --minima-border-color-02: #{$dm-border-color-02};
+  --minima-border-color-03: #{$dm-border-color-03};
+  --minima-table-text-color: #{$dm-table-text-color};
+  --minima-table-zebra-color: #{$dm-table-zebra-color};
+  --minima-table-header-bg-color: #{$dm-table-header-bg-color};
+  --minima-table-header-border: #{$dm-table-header-border};
+  --minima-table-border-color: #{$dm-table-border-color};
+  @include dm-highlight;
+}
+
+html[data-theme="light"] {
+  --minima-brand-color: #{$lm-brand-color};
+  --minima-brand-color-light: #{$lm-brand-color-light};
+  --minima-brand-color-dark: #{$lm-brand-color-dark};
+  --minima-site-title-color: #{$lm-site-title-color};
+  --minima-text-color: #{$lm-text-color};
+  --minima-background-color: #{$lm-background-color};
+  --minima-code-background-color: #{$lm-code-background-color};
+  --minima-link-base-color: #{$lm-link-base-color};
+  --minima-link-visited-color: #{$lm-link-visited-color};
+  --minima-link-hover-color: #{$lm-link-hover-color};
+  --minima-border-color-01: #{$lm-border-color-01};
+  --minima-border-color-02: #{$lm-border-color-02};
+  --minima-border-color-03: #{$lm-border-color-03};
+  --minima-table-text-color: #{$lm-table-text-color};
+  --minima-table-zebra-color: #{$lm-table-zebra-color};
+  --minima-table-header-bg-color: #{$lm-table-header-bg-color};
+  --minima-table-header-border: #{$lm-table-header-border};
+  --minima-table-border-color: #{$lm-table-border-color};
+  @include lm-highlight;
+}
 
 } @else if $color-scheme-dark {
 
