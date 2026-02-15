@@ -59,6 +59,7 @@ body {
     td, th {
         border-collapse: collapse;
         border: none;
+        padding-left: 0;
         padding-right: 0;
         margin-right: 0;
     }
@@ -75,6 +76,9 @@ body {
 .project-date {
     font-style: italic;
     text-align: right;
+    vertical-align: top;
+    white-space: nowrap;
+    padding-left: 1em;
 }
 
 .project-media {

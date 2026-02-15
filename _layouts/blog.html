@@ -16,10 +16,10 @@ layout: base
     {%- if site.posts.size > 0 -%}
       {%- for post in site.posts -%}
       <li>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         <table class="project-data-table">
           <tbody>
             <tr>
+              <td><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
               <td class="project-date">{{ post.date | date: "%b %d, %Y" }}</td>
             </tr>
           </tbody>
