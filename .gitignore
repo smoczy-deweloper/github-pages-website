@@ -24,3 +24,4 @@ Thumbs.db
 # Development
 _config_dev.yml
 .claude/
+.claudeignore
