@@ -1,0 +1,37 @@
+---
+layout: base
+title: "404"
+permalink: /404.html
+---
+
+<style>
+  .error-page {
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .error-code {
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.2em;
+    color: var(--minima-brand-color, #828282);
+  }
+
+  .error-message {
+    font-size: 1.4rem;
+    margin-bottom: 1.5em;
+  }
+
+  .error-home-link {
+    display: inline-block;
+    font-size: 1.1rem;
+  }
+</style>
+
+<div class="error-page">
+  <div class="error-code">404</div>
+  <p class="error-message">This page doesn't exist.</p>
+  <a class="error-home-link" href="{{ "/" | relative_url }}">Back to home</a>
+</div>
