@@ -19,7 +19,7 @@ layout: base
         <table class="project-data-table">
           <tbody>
             <tr>
-              <td><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>
+              <td><a class="post-link" href="{{ post.url | remove: '.html' | relative_url }}">{{ post.title | escape }}</a></td>
               <td class="project-date">{{ post.date | date: "%b %d, %Y" }}</td>
             </tr>
           </tbody>
