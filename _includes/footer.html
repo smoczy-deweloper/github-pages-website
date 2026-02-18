@@ -3,25 +3,7 @@
 
   <div class="wrapper">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-      {%- if site.data.general.author %}
-        <ul class="contact-list">
-          {% if site.data.general.author.name -%}
-            <li class="p-name">{{ site.data.general.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.data.general.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.data.general.author.email }}">{{ site.data.general.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
-      </div>
-      <div class="footer-col">
-        <p>{{ site.data.general.description | escape }}</p>
-      </div>
-    </div>
-
-    <div class="social-links">
+<div class="social-links">
       {%- include social.html -%}
     </div>
 
